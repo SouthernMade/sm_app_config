@@ -1,0 +1,4 @@
+sample_basic_setting: my-setting
+very_false: false
+test:
+  rails_setting: true
