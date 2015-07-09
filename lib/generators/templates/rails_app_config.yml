@@ -1,0 +1,6 @@
+development:
+  foo: "bar"
+production:
+  foo: "bar"
+test:
+  foo: "bar"
