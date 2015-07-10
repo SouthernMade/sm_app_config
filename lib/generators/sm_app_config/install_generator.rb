@@ -7,6 +7,7 @@ module SmAppConfig
     end
 
     desc "install", "Copies configuration files to config/"
+    method_options rails: true, desc: "Add Rails environments to configuration files"
     def install
       copy_app_config
       copy_app_config_example
@@ -34,7 +35,7 @@ module SmAppConfig
     private
 
     def config_template
-      defined?(Rails) ? "rails_app_config.yml" : "app_config.yml"
+      @template ||= options[:rails] ? "rails_app_config.yml" : "app_config.yml"
     end
 
   end
