@@ -5,14 +5,21 @@ require "sm_app_config/app_config"
 module SmAppConfig
   extend self
 
-  CONFIG = Configuration.new
+  attr_accessor :configuration
 
-  def configure configuration_options = {}
-    CONFIG.merge!(configuration_options)
+  def configuration
+    @configuration ||= Configuration.new
+  end
+
+  def configure(configuration_options = {})
+    configuration.merge!(configuration_options)
   end
 
   def clear!
-    CONFIG.clear
+    configuration.clear
   end
 
+  def config_file
+    configuration.fetch(:path)
+  end
 end

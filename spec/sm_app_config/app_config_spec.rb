@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe AppConfig, '.[]' do
 
   it "gets a setting from the environment preferentially" do

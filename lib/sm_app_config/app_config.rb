@@ -34,7 +34,7 @@ class AppConfig
   end
 
   def self.config_file
-    SmAppConfig::CONFIG.fetch(:path)
+    SmAppConfig.config_file
   end
 
 end
