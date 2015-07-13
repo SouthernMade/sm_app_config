@@ -64,10 +64,17 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sm_app_config. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+1. Fork it (https://github.com/SouthernMade/sm_app_config/fork)
+2. Create your feature branch (`git checkout -b feature/my-new-feature`)
+3. Write tests for your feature, or regression tests highlighting a bug
+4. Write the feature itself, or fix the bug
+5. Commit your changes (`git commit -am 'Add some feature'`)
+6. Push the branch (`git push origin feature/my-new-feature`)
+7. Create a new Pull Request
 
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [MIT License](LICENSE.txt).
 
