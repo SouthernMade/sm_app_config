@@ -21,7 +21,11 @@ class AppConfig
   def self.config
     @config ||= begin
       raw_config = File.read(config_file)
-      loaded = YAML.load(raw_config)
+      loaded = begin
+        YAML.load(raw_config, aliases: true) || {}
+      rescue ArgumentError
+        YAML.load(raw_config) || {}
+      end
 
       if defined?(Rails)
         loaded[Rails.env] or raise "No configuration found for environment #{Rails.env}"
