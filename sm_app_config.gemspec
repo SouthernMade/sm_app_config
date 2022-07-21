@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.post_install_message = "Run `app_config install` to complete installation."
 
-  spec.add_development_dependency "bundler", "~> 1.10"
+  spec.add_development_dependency "bundler", ">= 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 
