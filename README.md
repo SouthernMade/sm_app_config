@@ -1,5 +1,12 @@
 # SmAppConfig
 
+[![Southern Made - Galaxy Logo](https://raw.github.com/SouthernMade/sm_sms_campaign_webhook/develop/logo_galaxymark.png)](https://www.southernmade.com/) by [Southern Made](https://www.southernmade.com/)
+
+[![Gem Version](https://badge.fury.io/rb/sm_app_config.svg)](https://rubygems.org/gems/sm_app_config)
+[![CI](https://github.com/SouthernMade/sm_app_config/actions/workflows/ci.yml/badge.svg)](https://github.com/SouthernMade/sm_app_config/actions/workflows/ci.yml)
+[![Linting](https://github.com/SouthernMade/sm_app_config/actions/workflows/linting.yml/badge.svg)](https://github.com/SouthernMade/sm_app_config/actions/workflows/linting.yml)
+[![Security](https://github.com/SouthernMade/sm_app_config/actions/workflows/security.yml/badge.svg)](https://github.com/SouthernMade/sm_app_config/actions/workflows/security.yml)
+
 SmAppConfig (Southern Made App Config) is a framework agnostic library for storing and retrieving configuration settings using a YAML file or ENV variables. SmAppConfig will look first for an ENV variable with the specified name, then fall back to the YAML file if one is not found. Configuration files are excluded from source control by default. See below for usage instructions.
 
 ## Installation

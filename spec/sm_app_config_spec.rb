@@ -2,7 +2,7 @@ describe SmAppConfig, "#configure" do
   let(:configuration_options) { {} }
 
   before { SmAppConfig.configure(configuration_options) }
-  after  { SmAppConfig.clear! }
+  after { SmAppConfig.clear! }
 
   it "has sane defaults" do
     expect(SmAppConfig.config_file).to eq("config/app_config.yml")
@@ -10,7 +10,7 @@ describe SmAppConfig, "#configure" do
 
   context "overriding defaults" do
     let(:path) { "custom/app_config.yml" }
-    let(:configuration_options) { { path: path } }
+    let(:configuration_options) { {path: path} }
 
     it "uses the passed values" do
       expect(SmAppConfig.config_file).to eq(path)

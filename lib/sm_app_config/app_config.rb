@@ -1,10 +1,9 @@
-require 'yaml'
+require "yaml"
 
 class AppConfig
-
   def self.[] key
     result = ENV[key.upcase]
-    return YAML.load(result) unless result.nil?
+    return YAML.safe_load(result) unless result.nil?
 
     result = config[key]
     return result unless result.nil?
@@ -16,15 +15,13 @@ class AppConfig
     @config = nil
   end
 
-  private
-
   def self.config
     @config ||= begin
       raw_config = File.read(config_file)
       loaded = begin
-        YAML.load(raw_config, aliases: true) || {}
+        YAML.safe_load(raw_config, aliases: true) || {}
       rescue ArgumentError
-        YAML.load(raw_config) || {}
+        YAML.safe_load(raw_config) || {}
       end
 
       if defined?(Rails)
@@ -37,8 +34,11 @@ class AppConfig
     end
   end
 
+  private_class_method :config
+
   def self.config_file
     SmAppConfig.config_file
   end
 
+  private_class_method :config_file
 end
