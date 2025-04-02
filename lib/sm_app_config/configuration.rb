@@ -1,4 +1,4 @@
-require 'forwardable'
+require "forwardable"
 
 module SmAppConfig
   class Configuration
@@ -20,6 +20,5 @@ module SmAppConfig
     def merge! configuration_hash
       @hash.merge!(configuration_hash)
     end
-
   end
 end

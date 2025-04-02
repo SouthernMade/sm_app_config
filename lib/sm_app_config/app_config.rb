@@ -1,7 +1,6 @@
-require 'yaml'
+require "yaml"
 
 class AppConfig
-
   def self.[] key
     result = ENV[key.upcase]
     return YAML.load(result) unless result.nil?
@@ -40,5 +39,4 @@ class AppConfig
   def self.config_file
     SmAppConfig.config_file
   end
-
 end

@@ -37,6 +37,5 @@ module SmAppConfig
     def config_template
       @template ||= options[:rails] ? "rails_app_config.yml" : "app_config.yml"
     end
-
   end
 end
