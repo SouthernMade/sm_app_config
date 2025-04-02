@@ -5,7 +5,7 @@ require "sm_app_config/app_config"
 module SmAppConfig
   extend self
 
-  attr_accessor :configuration
+  attr_writer :configuration
 
   def configuration
     @configuration ||= Configuration.new
