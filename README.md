@@ -1,6 +1,6 @@
 # SmAppConfig
 
-[![Southern Made - Galaxy Logo](https://raw.github.com/SouthernMade/sm_sms_campaign_webhook/develop/logo_galaxymark.png)](https://www.southernmade.com/) by [Southern Made](https://www.southernmade.com/)
+[![Southern Made - Galaxy Logo](https://assets.southernmadeapps.com/logos/galaxymark.png)](https://www.southernmade.com/) by [Southern Made](https://www.southernmade.com/)
 
 [![Gem Version](https://badge.fury.io/rb/sm_app_config.svg)](https://rubygems.org/gems/sm_app_config)
 [![CI](https://github.com/SouthernMade/sm_app_config/actions/workflows/ci.yml/badge.svg)](https://github.com/SouthernMade/sm_app_config/actions/workflows/ci.yml)
