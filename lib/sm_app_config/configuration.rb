@@ -3,6 +3,7 @@ require "forwardable"
 module SmAppConfig
   class Configuration
     extend Forwardable
+
     def_delegators :@hash, :to_hash, :[], :[]=, :==, :fetch, :delete
 
     DEFAULTS = {
